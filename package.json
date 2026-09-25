@@ -2,22 +2,33 @@
   "name": "cold-email-tracker",
   "version": "1.0.0",
   "dependencies": {
-    "@testing-library/dom": "^10.4.1",
-    "@testing-library/jest-dom": "^6.9.1",
-    "@testing-library/react": "^16.3.2",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.126",
-    "@types/react": "^19.2.15",
-    "@types/react-dom": "^19.2.3",
-    "react": "^19.2.6",
-    "react-dom": "^19.2.6",
+    "@testing-library/dom": "10.4.1",
+    "@testing-library/jest-dom": "6.9.1",
+    "@testing-library/react": "16.3.2",
+    "@testing-library/user-event": "13.5.0",
+    "@types/jest": "27.5.2",
+    "@types/node": "16.18.126",
+    "@types/react": "19.2.15",
+    "@types/react-dom": "19.2.3",
+    "cors": "2.8.6",
+    "date-fns": "4.2.1",
+    "express": "5.2.1",
+    "googleapis": "173.0.0",
+    "lucide-react": "1.16.0",
+    "papaparse": "5.5.3",
+    "playwright": "1.60.0",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "react-router-dom": "7.15.1",
     "react-scripts": "5.0.1",
-    "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
+    "typescript": "4.9.5",
+    "web-vitals": "2.1.4",
+    "xlsx": "0.18.5"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "set PORT=3005 && react-scripts start",
+    "server": "node server/server.js",
+    "dev": "start cmd /c \"node server/server.js\" && set PORT=3005 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -39,5 +50,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/papaparse": "5.5.2"
+  },
+  "engines": {
+    "node": ">=20.12"
   }
 }

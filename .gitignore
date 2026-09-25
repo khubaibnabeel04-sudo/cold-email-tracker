@@ -11,13 +11,51 @@
 # production
 /build
 
-# misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+# ── secrets / credentials ──────────────────────────────
+.env
+.env.*
+!.env.example
+/server/keys/
+*service-account*.json
+credentials*.json
+token*.json
+*.pem
+*.key
 
+# ── real data (leads, OAuth tokens, app state) ─────────
+/server/data.json
+/server/ideas-channels.json
+/state_dump.json
+*.csv
+!test_leads.csv
+*.xlsx
+data/
+output/
+
+# ── browser profiles & automation artifacts ────────────
+chrome_profile*/
+/server/auto-schedule-shots/
+/server/.window-guard-*
+
+# ── logs ───────────────────────────────────────────────
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# ── local dev scratch (kept on disk, not published) ────
+/server/server_debug.js
+/server/server_test.js
+/repro_upload.js
+/convert_to_csv.py
+*.bak
+/nul
+
+# ── python / editor / OS ───────────────────────────────
+__pycache__/
+*.pyc
+.claude/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

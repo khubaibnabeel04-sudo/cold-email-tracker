@@ -1,0 +1,6 @@
+email,name,channelId,videoTitle
+test1@example.com,Test One,chan1,Amazing Video 1
+test2@example.com,Test Two,chan2,Amazing Video 2
+test3@example.com,Test Three,chan3,Amazing Video 3
+test1@example.com,Test One Dup,chan1,Amazing Video 1 Dup
+test4@example.com,Test Four,chan4,Amazing Video 4
